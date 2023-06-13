@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="23dp"
+        android:height="23dp"
+        android:gravity="center">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#560027" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <item
+        android:width="28dp"
+        android:height="28dp"
+        android:drawable="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:gravity="center_vertical" />
+</layer-list>

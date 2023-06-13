@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F7BDF</color>  <!-- Title Bar-->
+    <color name="colorPrimaryDark">#7C6A7C</color>  <!-- Status Bar -->
+    <color name="colorAccent">#D81B60</color>
+</resources>

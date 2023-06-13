@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Parent_Main.Attendance_Alert_Acticity"></activity>
+        <activity android:name=".Parent_Check_Attendance.Parent_Check_Attendance_Activity" />
+        <activity android:name=".Parent_Main.Parent_Main_Activity" />
+        <activity android:name=".Camera.Take_Picture_Activity" />
+        <activity android:name=".Teacher_Check_Quiz_Result.Quiz_Answers_Activity" />
+        <activity android:name=".Student_Mark_Attendance.Student_Submit_Attendance_Activity" />
+        <activity android:name=".Student_Attempt_Quiz.Quiz_Pin_Activity" />
+        <activity android:name=".Student_Quiz_Result.Show_Quiz_List_Activity" />
+        <activity android:name=".Teacher_Check_Attendance.Show_Specific_Attendance_Activity" />
+        <activity android:name=".Student_Check_Attendance.Show_Attendance_Activity" />
+        <activity android:name=".Teacher_Check_Quiz_Result.Quiz_List_Activity" />
+        <activity android:name=".Teacher_Check_Quiz_Result.Quiz_Marks_Activity" />
+        <activity android:name=".Student_Mark_Attendance.Student_Mark_Attendance_Activity" />
+        <activity android:name=".Teacher_Take_Attendance.Teacher_Take_Attendance_Activity" />
+        <activity android:name=".Student_Quiz_Result.Quiz_Result_Activity" />
+        <activity android:name=".Student_Attempt_Quiz.Student_Submit_Quiz_Activity" />
+        <activity android:name=".Student_Attempt_Quiz.Student_Attempt_Quiz_Activity" />
+        <activity android:name=".Quiz.Take_Now_Quiz_Activity" />
+        <activity android:name=".Student_Main.StudentMainActivity" />
+        <activity android:name=".Quiz.Show_All_Quiz_Activity" />
+        <activity android:name=".Teacher_Check_Attendance.Show_Attendance_Activity" />
+        <activity android:name=".Quiz.QuizDetailActivity" />
+        <activity android:name=".Quiz.CreateQuestionsActivity" />
+        <activity android:name=".Quiz.CreateQuizActivity" />
+        <activity android:name=".TimeTable.TimeTableActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

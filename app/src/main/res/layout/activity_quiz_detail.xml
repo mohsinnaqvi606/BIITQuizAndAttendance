@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:context=".Quiz.QuizDetailActivity">
+
+       <LinearLayout
+           android:layout_marginTop="4dp"
+           android:background="@drawable/custom_background"
+           android:id="@+id/ltQuizDetail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:id="@+id/tvQizTitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:text="Title : Hyper Text Mark Up Language"
+               android:textColor="#000"
+               android:textSize="17sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/tvTotalQuestions"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="7dp"
+               android:text="Total Question : 15"
+               android:textColor="#000"
+               android:textSize="17sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/tvTime"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="7dp"
+               android:layout_marginBottom="2dp"
+               android:text="Time Per Question : 15 Sec"
+               android:textColor="#000"
+               android:textSize="17sp"
+               android:textStyle="bold" />
+
+           <LinearLayout
+               android:id="@+id/buttonLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+
+               <Button
+                   android:id="@+id/buCancel"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="50dp"
+                   android:layout_marginTop="2dp"
+                   android:layout_marginBottom="6dp"
+                   android:background="@drawable/custom_button"
+                   android:text="Close"
+                   android:onClick="buClose"
+                   android:textColor="@android:color/white" />
+
+               <Button
+                   android:id="@+id/buAttemptNow"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="2dp"
+                   android:layout_marginStart="40dp"
+                   android:layout_marginBottom="6dp"
+                   android:background="@drawable/custom_button"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:text="Start Now"
+                   android:onClick="bu_TakeNow"
+                   android:textColor="@android:color/white" />
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Questions"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ltQuizDetail" />
+
+        <ListView
+            android:id="@+id/questionsListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_background"
+            android:divider="@android:color/holo_red_dark"
+            android:dividerHeight="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

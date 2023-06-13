@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ltCourses"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="14dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tvCourseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course : WE"
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tvCourseNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course No : WE"
+        android:textColor="#050505"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tvTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teacher : WE"
+        android:textColor="#050505"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
